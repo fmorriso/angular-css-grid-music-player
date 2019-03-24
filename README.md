@@ -4,8 +4,7 @@ This project is an "angular-ized" version of Paul Cheney's excellent Pluralsight
 
 The main changes I've made (not all of which work correctly yet):
 * I began by scaffolding a new Angular 7.2.10 application using Angular-CLI 7.3.6.
-* Angular Routing
-* A separate navigation component (the styling of which does not work correctly)
+* A separate navigation component (the styling of which does not work correctly) using Angular Routing
 * SCSS styles are similar, but not 100% identical to where and how they are used.
 * The jpg images were copied to the "comes free with Angular-CLI" `assets` folder, not an `images` folder.
 * I use `ngTemplate` with `*ngFor` in several places that replaces copy/paste of information in Paul's snippets.txt file.  This technique is used for rendering the navigation icons as well as the pictures in the main page.
