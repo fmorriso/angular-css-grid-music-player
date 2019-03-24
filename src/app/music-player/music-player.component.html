@@ -8,13 +8,15 @@
   <!-- PAGE CONTENT GOES HERE -->
   <main class="album">
 
-    <figure>
-      <a [routerLink]="['/player']">
-        <img src="assets/a_beach200.jpg" srcset="assets/a_beach200.jpg 1x, assets/a_beach400.jpg 2x"/>
-      </a>
-      <figcaption>On the Beach</figcaption>
-    </figure>
+    <ng-container *ngFor="let image of images">
+      <figure>
+          <a [routerLink]="['/player']">
+            <img src="assets/{{image.small}}" srcset="assets/{{image.small}} 1x, assets/{{image.large}} 2x"/>
+          </a>
+        <figcaption>{{image.caption}}</figcaption>
+      </figure>
 
+    </ng-container>
 
   </main>
 
