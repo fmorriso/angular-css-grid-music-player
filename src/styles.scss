@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
+
+@import "variables";
+
+@import "reset";
+
+@import "small-default";
+
+@media only screen and (min-width: 560px) {
+    @import "medium";
+} // end media query
+
+@media only screen and (min-width: 1140px) {
+    @import "large";
+} // end media query
