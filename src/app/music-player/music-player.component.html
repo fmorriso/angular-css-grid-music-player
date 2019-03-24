@@ -7,12 +7,15 @@
 
   <!-- PAGE CONTENT GOES HERE -->
   <main class="album">
+
     <figure>
-      <a [routerLink]="['/music']">
-        <img src="assets/a_beach200.jpg" />
+      <a [routerLink]="['/player']">
+        <img src="assets/a_beach200.jpg" srcset="assets/a_beach200.jpg 1x, assets/a_beach400.jpg 2x"/>
       </a>
-      <figcaption></figcaption>
+      <figcaption>On the Beach</figcaption>
     </figure>
+
+
   </main>
 
   <!-- PAGE NAVIGATION GOES HERE (unless in separate Angular component -->

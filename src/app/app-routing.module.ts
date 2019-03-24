@@ -8,11 +8,11 @@ import { SearchComponent } from './search/search.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
-  { path: 'music', component: MusicPlayerComponent, data: {label: 'Home', klass: 'fa fa-music'} },
+  { path: 'player', component: MusicPlayerComponent, data: {label: 'Player', klass: 'fa fa-music'} },
   { path: 'artist', component: ArtistComponent, data: {label: 'Artist', klass: 'fa fa-user'} },
   { path: 'song', component: SongComponent, data: {label: 'Song', klass: 'fa fa-list'} },
   { path: 'search', component: SearchComponent, data: {label: 'Search', klass:'fa fa-search'} },
-  { path: '', pathMatch: 'full', redirectTo: 'music' },
+  { path: '', pathMatch: 'full', redirectTo: 'player' },
   { path: '**', component: PageNotFoundComponent }
 ];
 const routeOptions: ExtraOptions = {enableTracing: true};
