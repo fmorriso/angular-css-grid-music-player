@@ -19,7 +19,8 @@ export class NavigationComponent implements OnInit {
       if (route.data && route.data.label) {
         this.links.push({
           path: `/${route.path}`,
-          label: route.data.label
+          label: route.data.label,
+          klass: route.data.klass
         });
       }
     }

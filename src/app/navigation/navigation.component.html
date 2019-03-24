@@ -1,7 +1,8 @@
 <nav>
   <ng-container *ngFor="let link of links">
     <div>
-      <a [routerLink]="link.path" [routerLinkActive]="['active-route']">{{link.label}}</a>
+      <a [routerLink]="link.path" [routerLinkActive]="['active-route']"></a>
+      <span class="{{link.klass}}"></span>
     </div>
   </ng-container>
 </nav>

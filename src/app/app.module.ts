@@ -8,6 +8,7 @@ import { ArtistComponent } from './artist/artist.component';
 import { SongComponent } from './song/song.component';
 import { SearchComponent } from './search/search.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NavigationComponent } from './navigation/navigation.component';
     ArtistComponent,
     SongComponent,
     SearchComponent,
-    NavigationComponent
+    NavigationComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
