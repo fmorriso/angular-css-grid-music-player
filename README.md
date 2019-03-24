@@ -1,7 +1,20 @@
-# AngularCssGridMusicPlayer
+# Angular CSS Grid Music Player
+## Background
+This project is an "angular-ized" version of Paul Cheney's excellent Pluralsight course [Hands-on Responsive Web Design 3: Columns, Flexbox and Grids](https://app.pluralsight.com/library/courses/responsive-web-design-columns-flexbox-grids/table-of-contents).
 
+The main changes I've made (not all of which work correctly yet):
+* I began by scaffolding a new Angular 7.2.10 application using Angular-CLI 7.3.6.
+* Angular Routing
+* A separate navigation component (the styling of which does not work correctly)
+* SCSS styles are similar, but not 100% identical to where and how they are used.
+* The jpg images were copied to the "comes free with Angular-CLI" `assets` folder, not an `images` folder.
+* I use `ngTemplate` with `*ngFor` in several places that replaces copy/paste of information in Paul's snippets.txt file.  This technique is used for rendering the navigation icons as well as the pictures in the main page.
+* use of an interface ImageInfo to help define the small edition, large edition and caption of each image.  You can see this in action within file `music-player.component.html`
+## Angular CLI information
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
 ## Google Fonts
+See below for how this is incorporated into the styles.scss file
+
 [example](https://fonts.google.com/?selection.family=Source+Sans+Pro:400,700)
 
 
