@@ -4,11 +4,19 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MusicPlayerComponent } from './music-player/music-player.component';
+import { ArtistComponent } from './artist/artist.component';
+import { SongComponent } from './song/song.component';
+import { SearchComponent } from './search/search.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MusicPlayerComponent
+    MusicPlayerComponent,
+    ArtistComponent,
+    SongComponent,
+    SearchComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
