@@ -4,6 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Google Fonts
 [example](https://fonts.google.com/?selection.family=Source+Sans+Pro:400,700)
 
+
+
 ## Font Awesome
 [get started](https://fontawesome.com/start)
 
@@ -16,3 +18,10 @@ using npm:
 ```
 npm install --save-dev @fortawesome/fontawesome-free
 ```
+## Importing Google Fonts and Font Awesome via SCSS
+The following lines go in styles.scss
+```scss
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
+```
+
