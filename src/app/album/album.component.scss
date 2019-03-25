@@ -1,4 +1,6 @@
 /* MAIN ALBUM */
+@import "../../variables";
+
 main.album {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -16,7 +18,7 @@ main.album {
   }
 }
 
-@media only screen and (min-width: 29rem) {
+@media only screen and (min-width: $mediumScreen) {
   main.album {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }

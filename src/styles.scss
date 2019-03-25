@@ -7,6 +7,6 @@
 
 @import "small-default";
 
-@media only screen and (min-width: 29rem) {
+@media only screen and (min-width: $mediumScreen) {
     @import "medium";
 } // end media query
