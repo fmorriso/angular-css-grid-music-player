@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ImageInfo } from '../image-info';
+import { ImageInfo } from './image-info';
 
 @Component({
   selector: 'app-album',

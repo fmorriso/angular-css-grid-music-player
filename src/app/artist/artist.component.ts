@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ArtistInfo } from '../artist-info';
+//
+import { ArtistInfo } from './artist-info';
 
 @Component({
   selector: 'app-artist',
@@ -12,8 +13,8 @@ export class ArtistComponent implements OnInit {
     { src: 'r_clara160.jpg', caption: 'Brenda Bache' },
     { src: 'r_jen160.jpg', caption: 'Clara Stoneman' },
     { src: 'r_jordan160.jpg', caption: 'Dory Jensen' },
-    { src: 'r_rey160.jpg', caption: 'Erica Marlay'},
-    { src: 'r_sally160.jpg', caption: 'Fanny Dylan'}
+    { src: 'r_rey160.jpg', caption: 'Erica Marlay' },
+    { src: 'r_sally160.jpg', caption: 'Fanny Dylan' }
   ];
   constructor() {}
 
