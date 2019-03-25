@@ -3,3 +3,41 @@
 <header>
   <h1>Player</h1>
 </header>
+
+<main class="player">
+  <div class="photo">
+    <img
+      src="assets/howl650.jpg"
+      alt="cover"
+      sizes="(min-width: 29em) 50vw, 100vw"
+      srcset="
+        assets/howl650.jpg 650w,
+        assets/howl750.jpg 750w,
+        assets/howl850.jpg 850w,
+        assets/howl950.jpg 950w
+      "
+    />
+  </div>
+
+  <!-- Time elapsed, remaining -->
+  <div class="startTime">1:25</div>
+  <div class="time">
+    <input type="range" name="volume" min="0" max="100" value="30" />
+  </div>
+  <div class="endTime">-2:14</div>
+
+  <div class="title">
+    <span>Howling at the Moon</span>
+    <span>Wolf Pack Seven</span>
+  </div>
+
+  <!-- previous, play, next -->
+  <div class="previous"><span class="fa fa-angle-double-left"></span></div>
+  <div class="play"><span class="fa fa-play"></span></div>
+  <div class="next"><span class="fa fa-angle-double-right"></span></div>
+
+  <!-- volume controls -->
+  <div class="voldn"><span class="fa fa-volume-down"></span></div>
+	<div class="volume"><span><input type="range" name="volume" min="0" max="100"></span></div>
+	<div class="volup"><span class="fa fa-volume-up"></span></div>
+</main>
