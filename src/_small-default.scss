@@ -160,14 +160,22 @@ main.player {
     }
   }
 
+  /* Previous, Play, Next controls */
   div.previous {
     grid-area: prev;
+    justify-self: end;
+    font-size: 1.5rem;
   }
   div.play {
     grid-area: play;
+    justify-self: center;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
   }
   div.next {
     grid-area: next;
+    justify-self: start;
+    font-size: 1.5rem;
   }
 
   div.voldn {
