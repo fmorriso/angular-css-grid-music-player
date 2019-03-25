@@ -63,29 +63,7 @@ main {
 
 
 
-/* MAIN ARTIST */
-main.artist {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: auto;
 
-  section {
-    display: grid;
-    grid-template-columns: 80px auto;
-    margin: 0.75rem 5%;
-
-    div img {
-      width: 100%;
-      clip-path: circle(40px at center);
-      -webkit-clip-path: circle(40px at center);
-    }
-
-    div:nth-child(2) {
-      align-self: center;
-      padding-left: 5%;
-    }
-  }
-}
 
 /* MAIN PLAYER */
 main.player {
