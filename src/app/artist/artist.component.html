@@ -1,3 +1,18 @@
-<p>
-  artist works!
-</p>
+<!-- artist.html in non-Angular version -->
+<!-- PAGE HEADER GOES HERE -->
+<header>
+  <h1>Artist</h1>
+</header>
+
+<main class="artist">
+  <ng-container *ngFor="let artist of artists">
+    <section>
+      <div>
+        <a [routerLink]="['/player']">
+          <img src="assets/{{ artist.src }}" />
+        </a>
+      </div>
+      <div>{{ artist.caption }}</div>
+    </section>
+  </ng-container>
+</main>

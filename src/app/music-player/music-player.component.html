@@ -1,24 +1,21 @@
 <!-- index.html in non-Angular version -->
-<div class="">
-  <!-- PAGE HEADER GOES HERE -->
-  <header>
-    <h1>Album</h1>
-  </header>
 
-  <!-- PAGE CONTENT GOES HERE -->
-  <main class="album">
+<!-- PAGE HEADER GOES HERE -->
+<header>
+  <h1>Album</h1>
+</header>
 
-    <ng-container *ngFor="let image of images">
-      <figure>
-          <a [routerLink]="['/player']">
-            <img src="assets/{{image.small}}" srcset="assets/{{image.small}} 1x, assets/{{image.large}} 2x"/>
-          </a>
-        <figcaption>{{image.caption}}</figcaption>
-      </figure>
-
-    </ng-container>
-
-  </main>
-
-  <!-- PAGE NAVIGATION GOES HERE (unless in separate Angular component -->
-</div>
+<!-- PAGE CONTENT GOES HERE -->
+<main class="album">
+  <ng-container *ngFor="let image of images">
+    <figure>
+      <a [routerLink]="['/player']">
+        <img
+          src="assets/{{ image.small }}"
+          srcset="assets/{{image.small}} 1x, assets/{{image.large}} 2x"
+        />
+      </a>
+      <figcaption>{{ image.caption }}</figcaption>
+    </figure>
+  </ng-container>
+</main>
