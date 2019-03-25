@@ -1,0 +1,105 @@
+@import '../../variables';
+
+/* MAIN PLAYER */
+main.player {
+  display: grid;
+  grid-template-columns: 50px auto 50px;
+  grid-auto-rows: auto;
+  grid-template-areas:
+    'photo photo photo'
+    'time time time'
+    'startTime empty endTime'
+    'title title title'
+    'prev play next'
+    'dn vol up';
+  margin-top: 1.5rem;
+
+  div.photo {
+    grid-area: photo;
+  }
+  div.photo img {
+    width: 84%;
+    margin: 0 0 0.5rem 8%;
+    border-radius: 20px;
+  }
+
+  div.time {
+    grid-area: time;
+    justify-self: center;
+    width: 84%;
+    input {
+      width: 100%;
+    }
+  }
+  div.startTime {
+    grid-area: startTime;
+    text-align: right;
+  }
+  div.endTime {
+    grid-area: endTime;
+  }
+
+  div.title {
+    grid-area: title;
+    span {
+      display: block;
+      text-align: center;
+    }
+
+    span:nth-child(1) {
+      font-size: 1.5rem;
+      padding: 1rem 0 0.3rem 0;
+    }
+
+    span:nth-child(2) {
+      font-size: 1.2rem;
+      padding-bottom: 1rem;
+    }
+  }
+
+  /* Previous, Play, Next controls */
+  div.previous {
+    grid-area: prev;
+    justify-self: end;
+    font-size: 1.5rem;
+  }
+  div.play {
+    grid-area: play;
+    justify-self: center;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  div.next {
+    grid-area: next;
+    justify-self: start;
+    font-size: 1.5rem;
+  }
+
+  /* Volumn controls */
+  div.voldn {
+    grid-area: dn;
+    justify-self: center;
+  }
+  div.volume {
+    grid-area: vol;
+    input {
+      width: 100%;
+    }
+  }
+  div.volup {
+    grid-area: up;
+    justify-self: center;
+  }
+}
+
+@media only screen and (min-width: $mediumScreen) {
+  main.player {
+    grid-template-columns: 50% 50px auto 50px;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'photo startTime time endTime'
+      'photo title title title'
+      'photo prev play next'
+      'photo dn vol up';
+  }
+}
