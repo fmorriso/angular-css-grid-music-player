@@ -102,3 +102,81 @@ main.artist {
     }
   }
 }
+
+/* MAIN PLAYER */
+main.player {
+  display: grid;
+  grid-template-columns: 50px auto 50px;
+  grid-auto-rows: auto;
+  grid-template-areas:
+    'photo photo photo'
+    'time time time'
+    'startTime empty endTime'
+    'title title title'
+    'prev play next'
+    'dn vol up';
+  margin-top: 1.5rem;
+
+  div.photo {
+    grid-area: photo;
+  }
+  div.photo img {
+    width: 84%;
+    margin: 0 0 0.5rem 8%;
+    border-radius: 20px;
+  }
+
+  div.time {
+    grid-area: time;
+    justify-self: center;
+    width: 84%;
+    input {
+      width: 100%;
+    }
+  }
+  div.startTime {
+    grid-area: startTime;
+    text-align: right;
+  }
+  div.endTime {
+    grid-area: endTime;
+  }
+
+  div.title {
+    grid-area: title;
+    span {
+      display: block;
+      text-align: center;
+    }
+
+    span:nth-child(1) {
+      font-size: 1.5rem;
+      padding: 1rem 0 0.3rem 0;
+    }
+
+    span:nth-child(2) {
+      font-size: 1.2rem;
+      padding-bottom: 1rem;
+    }
+  }
+
+  div.previous {
+    grid-area: prev;
+  }
+  div.play {
+    grid-area: play;
+  }
+  div.next {
+    grid-area: next;
+  }
+
+  div.voldn {
+    grid-area: dn;
+  }
+  div.volume {
+    grid-area: vol;
+  }
+  div.volup {
+    grid-area: up;
+  }
+}
