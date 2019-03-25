@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ImageInfo } from '../image-info';
 
 @Component({
-  selector: 'app-music-player',
-  templateUrl: './music-player.component.html',
-  styleUrls: ['./music-player.component.scss']
+  selector: 'app-album',
+  templateUrl: './album.component.html',
+  styleUrls: ['./album.component.scss']
 })
-export class MusicPlayerComponent implements OnInit {
+export class AlbumComponent implements OnInit {
   images: ImageInfo[] = [
     {
       small: 'a_beach200.jpg',
@@ -33,7 +33,9 @@ export class MusicPlayerComponent implements OnInit {
     },
     { small: 'a_wheel200.jpg', large: 'a_wheel400.jpg', caption: 'Riding Away' }
   ];
-  constructor() {}
+  constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
+
 }
