@@ -3,6 +3,7 @@ import { Routes, RouterModule, ExtraOptions } from '@angular/router';
 //
 import { AlbumComponent } from './album/album.component';
 import { ArtistComponent } from './artist/artist.component';
+import { PlayerComponent } from './player/player.component';
 import { SongComponent } from './song/song.component';
 import { SearchComponent } from './search/search.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -17,6 +18,11 @@ const routes: Routes = [
     path: 'artist',
     component: ArtistComponent,
     data: { label: 'Artist', klass: 'fa fa-user' }
+  },
+  {
+    path: 'player',
+    component: PlayerComponent,
+    data: { label: 'Player', klass: 'fa fa-play' }
   },
   {
     path: 'song',

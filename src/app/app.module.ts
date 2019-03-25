@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 //
 import { AlbumComponent } from './album/album.component';
 import { ArtistComponent } from './artist/artist.component';
+import { PlayerComponent } from './player/player.component';
 import { SongComponent } from './song/song.component';
 import { SearchComponent } from './search/search.component';
 //
@@ -17,6 +18,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     AppComponent,
     AlbumComponent,
     ArtistComponent,
+    PlayerComponent,
     SongComponent,
     SearchComponent,
     NavigationComponent,
