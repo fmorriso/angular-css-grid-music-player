@@ -178,13 +178,19 @@ main.player {
     font-size: 1.5rem;
   }
 
+  /* Volumn controls */
   div.voldn {
     grid-area: dn;
+    justify-self: center;
   }
   div.volume {
     grid-area: vol;
+    input {
+      width: 100%;
+    }
   }
   div.volup {
     grid-area: up;
+    justify-self: center;
   }
 }
