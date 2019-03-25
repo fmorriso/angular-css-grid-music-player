@@ -7,15 +7,15 @@
 
 <!-- PAGE CONTENT GOES HERE -->
 <main class="album">
-  <ng-container *ngFor="let image of images">
+  <ng-container *ngFor="let album of albums">
     <figure>
       <a [routerLink]="['/player']">
         <img
-          src="assets/{{ image.small }}"
-          srcset="assets/{{image.small}} 1x, assets/{{image.large}} 2x"
+          src="assets/{{album.small}}"
+          srcset="assets/{{album.small}} 1x, assets/{{album.large}} 2x"
         />
       </a>
-      <figcaption>{{ image.caption }}</figcaption>
+      <figcaption>{{ album.caption }}</figcaption>
     </figure>
   </ng-container>
 </main>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ImageInfo } from './image-info';
+import { ImageInfo as AlbumInfo } from './image-info';
 
 @Component({
   selector: 'app-album',
@@ -7,7 +7,7 @@ import { ImageInfo } from './image-info';
   styleUrls: ['./album.component.scss']
 })
 export class AlbumComponent implements OnInit {
-  images: ImageInfo[] = [
+  albums: AlbumInfo[] = [
     {
       small: 'a_beach200.jpg',
       large: 'a_beach400.jpg',
