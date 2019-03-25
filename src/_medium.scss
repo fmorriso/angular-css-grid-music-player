@@ -1,13 +1,1 @@
-
-
-
-
-main.player {
-  grid-template-columns: 50% 50px auto 50px;
-  grid-template-rows: auto;
-  grid-template-areas:
-    'photo startTime time endTime'
-    'photo title title title'
-    'photo prev play next'
-    'photo dn vol up';
-}
+/* all this styling was move to component-specific .scss files with appropriate media-query */
