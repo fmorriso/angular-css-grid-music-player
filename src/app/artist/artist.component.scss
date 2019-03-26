@@ -11,16 +11,20 @@ main.artist {
     grid-template-columns: 80px auto;
     margin: 0.75rem 5%;
 
-    div img {
-      width: 100%;
-      clip-path: circle(40px at center);
-      -webkit-clip-path: circle(40px at center);
+    div {
+      
+      img {
+        width: 100%;
+        clip-path: circle(40px at center);
+        -webkit-clip-path: circle(40px at center);
+      }
+
+      &:nth-child(2) {
+        align-self: center;
+        padding-left: 5%;
+      }
     }
 
-    div:nth-child(2) {
-      align-self: center;
-      padding-left: 5%;
-    }
   }
 }
 
