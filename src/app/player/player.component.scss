@@ -16,11 +16,11 @@ main.player {
 
   div.photo {
     grid-area: photo;
-  }
-  div.photo img {
-    width: 84%;
-    margin: 0 0 0.5rem 8%;
-    border-radius: 20px;
+    img {
+      width: 84%;
+      margin: 0 0 0.5rem 8%;
+      border-radius: 20px;
+    }
   }
 
   div.time {
