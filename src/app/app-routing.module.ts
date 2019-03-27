@@ -37,7 +37,12 @@ const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'album' },
   { path: '**', component: PageNotFoundComponent }
 ];
-const routeOptions: ExtraOptions = { enableTracing: true };
+
+// need useHash: true in order for this to work on Azure App Service
+const routeOptions: ExtraOptions = {
+  enableTracing: true,
+  useHash: true
+};
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, routeOptions)],
