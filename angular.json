@@ -40,11 +40,15 @@
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
-            "tsConfig": "src/tsconfig.app.json",
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.scss"],
-            "scripts": [],
-            "es5BrowserSupport": true
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.scss"
+            ],
+            "scripts": []
           },
           "configurations": {
             "development": {
@@ -57,7 +61,8 @@
               "extractLicenses": true,
               "vendorChunk": true,
               "buildOptimizer": false,
-              "commonChunk": true
+              "commonChunk": true,
+              "progress": true
             },
             "production": {
               "fileReplacements": [
@@ -75,6 +80,7 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
+              "progress": true,
               "budgets": [
                 {
                   "type": "initial",
@@ -94,7 +100,6 @@
             "development": {
               "browserTarget": "angular-css-grid-music-player:build:development"
             },
-
             "production": {
               "browserTarget": "angular-css-grid-music-player:build:production"
             }
@@ -113,16 +118,26 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
-            "styles": ["src/styles.scss"],
+            "styles": [
+              "src/styles.scss"
+            ],
             "scripts": [],
-            "assets": ["src/favicon.ico", "src/assets"]
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ]
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["src/tsconfig.app.json", "src/tsconfig.spec.json"],
-            "exclude": ["**/node_modules/**"]
+            "tsConfig": [
+              "tsconfig.app.json",
+              "tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -148,11 +163,16 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "e2e/tsconfig.e2e.json",
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
     }
   },
-  "defaultProject": "angular-css-grid-music-player"
+  "defaultProject": "angular-css-grid-music-player",
+  "cli": {
+    "analytics": "5e5dd58c-fc9c-48af-ab9f-6a148520a0e0"
+  }
 }
