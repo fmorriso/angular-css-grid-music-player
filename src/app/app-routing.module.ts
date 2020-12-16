@@ -40,8 +40,13 @@ const routes: Routes = [
 
 // need useHash: true in order for this to work on Azure App Service
 const routeOptions: ExtraOptions = {
-  enableTracing: true,
-  useHash: true
+    enableTracing: true,
+    useHash: true,
+    relativeLinkResolution: 'legacy'
+}{
+    enableTracing: true,
+    useHash: true,
+    relativeLinkResolution: 'legacy'
 };
 
 @NgModule({
