@@ -12,27 +12,27 @@ const routes: Routes = [
   {
     path: 'album',
     component: AlbumComponent,
-    data: { label: 'Album', klass: 'fa fa-music' }
+    data: { label: 'Album', klass: 'fas fa-music' }
   },
   {
     path: 'artist',
     component: ArtistComponent,
-    data: { label: 'Artist', klass: 'fa fa-user' }
+    data: { label: 'Artist', klass: 'fas fa-user' }
   },
   {
     path: 'player',
     component: PlayerComponent,
-    data: { label: 'Player', klass: 'fa fa-play' }
+    data: { label: 'Player', klass: 'fas fa-play' }
   },
   {
     path: 'song',
     component: SongComponent,
-    data: { label: 'Song', klass: 'fa fa-list' }
+    data: { label: 'Song', klass: 'fas fa-list' }
   },
   {
     path: 'search',
     component: SearchComponent,
-    data: { label: 'Search', klass: 'fa fa-search' }
+    data: { label: 'Search', klass: 'fas fa-search' }
   },
   { path: '', pathMatch: 'full', redirectTo: 'album' },
   { path: '**', component: PageNotFoundComponent }
