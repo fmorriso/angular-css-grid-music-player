@@ -12,7 +12,7 @@ const routes: Routes = [
   {
     path: 'album',
     component: AlbumComponent,
-    data: { label: 'Player', klass: 'fa fa-music' }
+    data: { label: 'Album', klass: 'fa fa-music' }
   },
   {
     path: 'artist',
@@ -40,8 +40,9 @@ const routes: Routes = [
 
 // need useHash: true in order for this to work on Azure App Service
 const routeOptions: ExtraOptions = {
-  enableTracing: true,
-  useHash: true
+    enableTracing: true,
+    useHash: false,
+    relativeLinkResolution: 'corrected',
 };
 
 @NgModule({
