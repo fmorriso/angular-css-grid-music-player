@@ -14,7 +14,7 @@ The main changes I've made (not all of which work correctly yet):
 * Use of an interface, AlbumInfo, to help define the small edition, large edition and caption of each image.  You can see this in action within file `album.component.html`.
 * Use of an interface, ArtistInfo, to help define the source (src) and caption of each artist's image.  You can see this in action within file `player.component.html`.
 ## Angular CLI information
-This project was generated with [Angular CLI](https://cli.angular.io/) version 7.3.6.
+This project was generated with [Angular CLI](https://cli.angular.io/) version 7.3.6 and subsequently upgraded to 11.0.4.
 ## Google Fonts
 See below for how this is incorporated into the styles.scss file
 
@@ -26,7 +26,7 @@ See below for how this is incorporated into the styles.scss file
 [get started](https://fontawesome.com/start)
 
 ```html
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 ```
 
 using npm:
@@ -38,6 +38,5 @@ npm install --save-dev @fortawesome/fontawesome-free
 The following lines go in styles.scss
 ```scss
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
-@import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
+@import url('https://use.fontawesome.com/releases/v5.15.1/css/all.css');
 ```
-
