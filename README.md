@@ -14,7 +14,7 @@ The main changes I've made (not all of which work correctly yet):
 * Use of an interface, AlbumInfo, to help define the small edition, large edition and caption of each image.  You can see this in action within file `album.component.html`.
 * Use of an interface, ArtistInfo, to help define the source (src) and caption of each artist's image.  You can see this in action within file `player.component.html`.
 ## Angular CLI information
-This project was generated with [Angular CLI](https://cli.angular.io/) version 7.3.6 and subsequently upgraded to 11.0.4.
+This project was generated with [Angular CLI](https://cli.angular.io/) version 7.3.6 and subsequently upgraded to 11.0.5.
 ## Google Fonts
 See below for how this is incorporated into the styles.scss file
 
